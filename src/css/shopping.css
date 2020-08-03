@@ -1,0 +1,217 @@
+.footer {
+    margin-top: 0;
+}
+
+.shopping {
+    height: auto;
+    background: #fff;
+}
+
+.shopping_cen {
+    width: 1200px;
+    height: 378px;
+    margin: 0 auto;
+}
+
+.shopping_bot {
+    height: 64px;
+    box-shadow: 0 0 50px 0 #999;
+}
+
+h1 {
+    color: #fc002d;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.shopping_cen_content {
+    height: auto;
+    font-size: 18px;
+    border-top: 2px solid #fc002d;
+}
+
+.shop_title {
+    width: 1200px;
+    height: 36px;
+    background-color: #f5f5f5;
+    line-height: 36px;
+    color: #333;
+    font-size: 14px;
+}
+
+.shop_desc {
+    display: inline-block;
+    padding-left: 72px;
+    margin-right: 455px;
+    box-sizing: border-box;
+}
+
+.shop_price {
+    display: inline-block;
+    margin-right: 153px;
+    text-align: center;
+}
+
+.shop_num {
+    display: inline-block;
+    margin-right: 153px;
+    text-align: center;
+}
+
+.shop_pricecount {
+    display: inline-block;
+    text-align: center;
+    margin-right: 161px;
+}
+
+.shopping_box {
+    height: 110px;
+    box-sizing: border-box;
+    padding: 15px 0;
+}
+
+.shopping_img {
+    width: 78px;
+    height: 78px;
+    line-height: 78px;
+    text-align: center;
+    border: 1px solid #ddd;
+    float: left;
+    margin-right: 10px;
+}
+
+.shopping_img img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.shopping_goodsName {
+    display: block;
+    float: left;
+    width: 267px;
+    font-size: 12px;
+    color: #333;
+    margin-right: 200px;
+    line-height: 18px;
+}
+
+.shopping_price {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin-right: 100px;
+}
+
+.shopping_proCount {
+    display: inline-block;
+}
+
+.reduce {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.proCount_num {
+    display: inline-block;
+    width: 44px;
+    height: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.plus {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.shopping_priceCount {
+    margin-left: 100px;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin-right: 134px;
+    color: #fc002d;
+}
+
+.shopping_operation {
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+.shopping_bot_cen {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.shopping_bot_left {
+    color: #333;
+    font-size: 12px;
+    cursor: pointer;
+    float: left;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+.icon-shanchu {
+    color: #fc002d;
+    font-size: 20px;
+}
+
+.shopping_bot_right {
+    color: #333;
+    font-size: 12px;
+    line-height: 64px;
+    cursor: pointer;
+    float: right;
+}
+
+.shopping_bot_preCount {
+    color: #333;
+    font-size: 12px;
+    margin-right: 34px
+}
+
+.shopping_bot_preCount span {
+    color: #fc002d;
+}
+
+.shopping_bot_priceCount {
+    color: #333;
+    font-size: 12px;
+    margin-right: 27px;
+}
+
+.shopping_bot_priceCount span {
+    color: #fc002d;
+    font-size: 20px;
+}
+
+.shopping_bot_submit {
+    display: inline-block;
+    width: 111px;
+    height: 64px;
+    background-color: #fc002d;
+    text-align: center;
+    line-height: 64px;
+    font-size: 18px;
+    color: #fff;
+}

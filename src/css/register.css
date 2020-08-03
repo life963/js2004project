@@ -1,0 +1,212 @@
+.footer {
+    margin-top: 0;
+}
+
+.register {
+    height: auto;
+    background: #fff;
+}
+
+.register_cen {
+    height: 600px;
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.register_cen_top {
+    margin-top: 40px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAjCAMAAABCdbKKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNGM5MDRkMy02MjM2LTBkNGQtYWM5NS0xNDVjNjdlMjAyYTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEQ0Qzc5ODQ4MTdDMTFFQTk0RjhGNzg2MENGMEU0RDUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEQ0Qzc5ODM4MTdDMTFFQTk0RjhGNzg2MENGMEU0RDUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0ODc3NDIzYS05ZmY2LTRhNTUtODQwYS0zZjFjOGJlYjFiODMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpjNzA0OWQ2Ny1iNjhjLWRjNDktYjRhOS0zNGJlZmJhMjJmN2IiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6ux9pFAAAAq1BMVEXd3d38AC3+/v7y8vL7+/v9T27s7Oz9Xnr/2eDm5ub8CTTj4+Pg4ODu7u7////f39/09PTw8PD8BjLi4uLe3t7h4eH4+Pj29vb+kqX8Ai//8/X9ZYD/+/z+xtDo6Oj9fJP9dI38AS78/Pz/5+v+qbj/6Oz+vcn9Mlb8Ejz8IUj8HUX8Ez3+v8rl5eX/5er9R2f+0dn9SGj/4eb8H0fk5OT9MVX+1Nz+qLf////oluxYAAAAOXRSTlP//////////////////////////////////////////////////////////////////////////wA6rGVAAAABMklEQVR42uzdB1ICQRRFURRMmDBgxoABE+a0/5VZ/VdBPc5Zw7vVNTChs0C40V/z1WFuGH26pYp6YOqiJsXxaot6a8/WRU2K0zqqu7YualL0r1vUixvGLmpSXNRRvWnsoibF/UmLerxt7aImxVEd1cvWLmpSfJ61qHv75i5qUvzWUX1u7qImxXdFfWDuoibGXVW9Zu+iJsVrRX1o76ImxdVbVb1u8KImxYp7RUVNlt2Puld0aPGiJsVlHdU7Fi9qUjxW1D2LFzVOakTNTF5Tv7imFjV+/UbUzO7/1D/+pxY1Ud7dUSZqsjy791vURJl4SkvUZLnxPLWoifLgzSeiJot3lImaLE/eJipqsnjvt6jJ0r/1hQ5RE8W3tERNFl+9FDVhfJ9a1IQZVdRTU58b/wIMAM3+btWo5FYjAAAAAElFTkSuQmCC")no-repeat;
+    height: 35px;
+    width: 980px;
+    color: #fff;
+    line-height: 35px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.register_cen_top span:first-child {
+    float: left;
+    margin-left: 40px;
+}
+
+.register_cen_top span:last-child {
+    float: right;
+    margin-right: 320px;
+}
+
+.tel {
+    height: 40px;
+    width: 640px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.tel_top,
+.random_top,
+.password_top,
+.newpass_top {
+    width: 85px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.tel input {
+    width: 548px;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+    font-size: 14px;
+    text-indent: 20px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.tel_bot {
+    width: 140px;
+    line-height: 25px;
+    font-size: 12px;
+    position: absolute;
+    left: 655px;
+    top: 2px;
+}
+
+.random {
+    height: 40px;
+    width: 640px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.random input {
+    width: 348px;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+    font-size: 14px;
+    text-indent: 20px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.random_cen {
+    display: block;
+    width: 190px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fc002d;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    left: 439px;
+    top: 2px;
+    border: 0;
+    margin-left: 10px;
+}
+
+.random_bot {
+    width: 140px;
+    line-height: 25px;
+    font-size: 12px;
+    position: absolute;
+    left: 655px;
+    top: 2px;
+}
+
+.password {
+    height: 40px;
+    width: 640px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.password input {
+    width: 548px;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+    font-size: 14px;
+    text-indent: 20px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.password_bot {
+    width: 140px;
+    line-height: 25px;
+    font-size: 12px;
+    position: absolute;
+    left: 655px;
+    top: 2px;
+}
+
+.newpass {
+    height: 40px;
+    width: 640px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.newpass input {
+    width: 548px;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+    font-size: 14px;
+    text-indent: 20px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.newpass_bot {
+    width: 140px;
+    line-height: 25px;
+    font-size: 12px;
+    position: absolute;
+    left: 655px;
+    top: 2px;
+}
+
+.submit {
+    height: 40px;
+    width: 550px;
+    margin-top: 20px;
+    margin-left: 260px;
+}
+
+.submit input {
+    height: 40px;
+    width: 548px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.register_form p {
+    float: right;
+    margin-right: 175px;
+    margin-top: 20px;
+}
+
+.register_form p a {
+    text-decoration: none;
+    color: #005aa0;
+    font-size: 12px;
+    cursor: pointer;
+}

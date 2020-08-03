@@ -1,0 +1,160 @@
+.loginbg {
+    height: 600px;
+    background: #fc2f00;
+}
+
+.loginbg_cen {
+    margin: 0 auto;
+    height: 600px;
+    width: 1200px;
+    background: url("https://icon.zol-img.com.cn/ucdn/b-zol-com/1.0.2/img/img.255eac05.png") no-repeat;
+    position: relative;
+}
+
+.login-box {
+    position: absolute;
+    top: 135px;
+    right: 0;
+    padding: 40px 26px;
+    width: 298px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.login-head span {
+    position: absolute;
+    top: 44px;
+    right: 10px;
+    color: #666;
+    font-size: 12px;
+}
+
+#usernameBox {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0 42px 0 42px;
+    height: 42px;
+    border: 1px solid #e6e6e6;
+    top: 25px;
+}
+
+#usernameBox .icon-shouji-tianchong {
+    width: 42px;
+    height: 42px;
+    background: #d0d0d0;
+    float: left;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    line-height: 42px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#username {
+    display: block;
+    padding: 8px 14px;
+    width: 206px;
+    height: 26px;
+    color: #333;
+    border: 0 none;
+    outline: none;
+}
+
+#passwordBox {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0 42px 0 42px;
+    height: 42px;
+    border: 1px solid #e6e6e6;
+    top: 25px;
+}
+
+#password {
+    display: block;
+    padding: 8px 14px;
+    width: 206px;
+    height: 26px;
+    color: #333;
+    border: 0 none;
+    outline: none;
+}
+
+#passwordBox .icon-suo {
+    width: 42px;
+    height: 42px;
+    background: #d0d0d0;
+    float: left;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    line-height: 42px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.login_submit_btn {
+    margin-bottom: 20px;
+    display: block;
+    height: 44px;
+    width: 298px;
+    background: #fc002d;
+    color: #fff;
+    text-align: center;
+    border: 0 none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    top: 22px;
+}
+
+.nopass {
+    position: absolute;
+    width: 70px;
+    top: 268px;
+    right: 20px;
+    font-size: 12px;
+}
+
+.login_footer {
+    height: 140px;
+    background: #fff;
+}
+
+.login_footer_cen {
+    width: 1200px;
+    height: 140px;
+    margin: 0 auto;
+}
+
+.concat .icon-kefu {
+    font-size: 30px;
+    color: #999;
+}
+
+.tel-text {
+    color: #999;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tel {
+    font-size: 18px;
+    color: #fc002d;
+}
+
+.concat {
+    padding: 14px 0 24px;
+    text-align: center;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.copy {
+    margin-top: 12px;
+    line-height: 18px;
+    height: 18px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
