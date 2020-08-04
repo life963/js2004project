@@ -102,7 +102,7 @@
     width: 190px;
     height: 38px;
     line-height: 38px;
-    background-color: #fc002d;
+    background-color: #ddd;
     border-radius: 2px;
     color: #fff;
     font-size: 14px;
@@ -111,6 +111,10 @@
     top: 2px;
     border: 0;
     margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
 }
 
 .random_bot {

@@ -42,13 +42,12 @@
         url: "http://localhost/js/project/php/list.php",
         dataType: "json"
     }).done(function(data) {
-        //console.log(data)
         let $liststr = "";
         $.each(data, function(index, value) {
             $liststr += `
             <a href="3detail.html?sid=${value.sid}">
                 <div class="shoppinglist_one">
-                    <img src="${value.url}" alt="">
+                <img class="lazy" data-original="${value.url}" />
                     <p>${value.title}</p>
                     <p>
                         <span>￥${value.price}</span>
@@ -59,5 +58,11 @@
             `
         })
         $listbox.html($liststr);
+        //懒加载
+        $(function() {
+            $("img.lazy").lazyload({ effect: "fadeIn" });
+        });
     })
+
+
 })(jQuery)

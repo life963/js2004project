@@ -29,6 +29,20 @@
     font-size: 12px;
 }
 
+.login-box .login-head_top {
+    position: absolute;
+    height: 23px;
+    width: 128px;
+    border: 1px solid red;
+    font-weight: bold;
+    text-align: center;
+    line-height: 23px;
+    opacity: 0.6;
+    left: 69px;
+    top: 65px;
+    display: none;
+}
+
 #usernameBox {
     position: relative;
     margin: 0 0 20px;

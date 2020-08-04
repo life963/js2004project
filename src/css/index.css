@@ -443,6 +443,8 @@ body {
 
 .top_right_top_login {
     overflow: hidden;
+    display: block;
+    cursor: pointer;
 }
 
 .top_right_top_name {
