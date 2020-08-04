@@ -163,6 +163,7 @@ body {
 }
 
 .sort-tab-item {
+    cursor: pointer;
     float: left;
     position: relative;
     width: 140px;
@@ -175,7 +176,6 @@ body {
 }
 
 .sort-tab-item_active {
-    cursor: default;
     background: #fc002d;
 }
 
@@ -298,6 +298,26 @@ body {
     text-align: center;
 }
 
+.jump .active {
+    color: #fc002d;
+}
+
+.jump a {
+    margin: 0 20px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    height: 38px;
+    width: 88px;
+    border: 1px solid #999;
+    line-height: 38px;
+    text-align: center;
+}
+
+
+/*
 .jump a {
     display: inline-block;
 }
@@ -340,6 +360,11 @@ body {
     line-height: 38px;
     text-align: center;
     color: #333;
+} */
+
+.jump-ipt,
+.jump-btn {
+    display: none;
 }
 
 .footer {

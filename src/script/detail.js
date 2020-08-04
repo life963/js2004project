@@ -9,6 +9,7 @@
         },
         dataType: "json"
     }).done(function(data) {
+        $(".detailtop").html(data.title); //渲染头标签
         $(".introduce_name").html(data.title);
         $(".price_bold").html("<span>￥</span >" + data.price);
         //对获取的5个图片地址进行转换成数组的值

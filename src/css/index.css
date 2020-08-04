@@ -477,7 +477,7 @@ body {
     cursor: pointer;
 }
 
-.top_right_top_select a:first-child {
+#boss {
     float: left;
     margin-left: 10px;
     margin-top: 10px;
