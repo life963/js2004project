@@ -130,7 +130,7 @@
 
     //分页，使用插件
     $(".jump").pagination({
-        pageCount: 2,
+        pageCount: 2, //设置页码数
         jump: true,
         prevContent: "上一页",
         nextContent: "下一页",
@@ -140,7 +140,7 @@
                 url: "http://localhost/js/project/php/list.php",
                 dataType: "json",
                 data: {
-                    page: api.getCurrent()
+                    page: api.getCurrent() //将页码传入后端，用于确定要获取哪组数据
                 }
             }).done(function(data) {
                 let $liststr = "";
@@ -159,6 +159,7 @@
                     `
                 })
                 $listbox.html($liststr);
+
                 //懒加载
                 $(function() {
                     $("img.lazy").lazyload({ effect: "fadeIn" });
