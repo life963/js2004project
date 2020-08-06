@@ -1,0 +1,52 @@
+@charset "utf-8";
+.footer {
+    height: 140px;
+    background: #302e2e;
+    margin-top: 40px;
+}
+
+.footermain {
+    width: 1200px;
+    height: 140px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px 0;
+    overflow: hidden;
+    .footermain_right {
+        float: right;
+    }
+    .footermain_top {
+        margin-top: 10px;
+        height: 24px;
+        img {
+            float: left;
+        }
+        .footermain_top_teltext {
+            color: #999;
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0 10px;
+        }
+        .footermain_top_tel {
+            font-size: 18px;
+            color: #fc002d;
+            margin-right: 10px;
+        }
+    }
+    .footermain_cen {
+        margin: 10px 0;
+        color: #999;
+        height: 17px;
+        font-size: 12px;
+    }
+    .footermain_bottom {
+        line-height: 18px;
+        color: #999;
+        height: 18px;
+        font-size: 12px;
+        span {
+            float: left;
+            margin-right: 10px;
+        }
+    }
+}

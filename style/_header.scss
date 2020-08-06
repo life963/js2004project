@@ -1,0 +1,128 @@
+@charset "utf-8";
+.header {
+    height: 150px;
+}
+
+.one {
+    height: 30px;
+    background: #f6f6f6;
+    .onecen {
+        margin: 0 auto;
+        height: 30px;
+        width: 1200px;
+        .onecen_left {
+            float: left;
+            span {
+                color: #d3ccd3;
+                font-size: 12px;
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+            a {
+                color: #474747;
+                text-decoration: none;
+                line-height: 30px;
+                font-size: 12px;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+        .onecen_right {
+            float: right;
+            font-size: 12px;
+            a {
+                color: #474747;
+                text-decoration: none;
+                line-height: 30px;
+                color: #474747;
+                &:hover {
+                    color: red;
+                }
+            }
+            span {
+                color: #d3ccd3;
+            }
+        }
+    }
+}
+
+.two {
+    height: 120px;
+    background: #fff;
+    .twocen {
+        margin: 0 auto;
+        height: 120px;
+        width: 1200px;
+        .twocen_left {
+            float: left;
+            width: 340px;
+            height: 120px;
+            box-sizing: border-box;
+            padding-top: 32px;
+            a {
+                cursor: pointer;
+            }
+        }
+        .twocen_center {
+            float: left;
+            height: 120px;
+            width: 700px;
+            box-sizing: border-box;
+            padding-top: 30px;
+            padding-left: 93px;
+            .twocen_center_box {
+                height: 38px;
+                width: 600px;
+                border: 2px solid red;
+                border-radius: 30px;
+                overflow: hidden;
+                .twocen_center_box_img {
+                    float: left;
+                    margin: 13px;
+                }
+                .twocen_center_ipt {
+                    height: 38px;
+                    width: 480px;
+                    float: left;
+                    border: none;
+                    outline: none;
+                }
+                .twocen_center_text {
+                    text-decoration: none;
+                    float: right;
+                    height: 38px;
+                    width: 75px;
+                    line-height: 38px;
+                    color: white;
+                    font-size: 20px;
+                    text-align: center;
+                    background: red;
+                }
+            }
+            .twocen_center_a {
+                margin-left: 10px;
+                margin-top: 5px;
+                font-size: 12px;
+                span {
+                    margin-right: 4px;
+                    margin-left: 4px;
+                    color: #d3ccd3;
+                }
+                a {
+                    color: #474747;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+        .twocen_right {
+            float: right;
+            width: 82px;
+            height: 120px;
+            box-sizing: border-box;
+            padding-top: 22px;
+        }
+    }
+}
