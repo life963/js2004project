@@ -16,7 +16,7 @@
     //注册
     if(isset($_POST['submit'])){
         $tel = $_POST['tel'];
-        $password = $_POST['password'];
+        $password = sha1($_POST['password']);
         //将表单获取的电话和密码注册到表内
         $result=$conn->query("INSERT newreg VALUES('$tel','$password')");
         //跳转到登陆页面
@@ -27,7 +27,7 @@
     //判断是否传入用户名和密码
     if(isset($_POST['name'])&&isset($_POST['pass'])){
         $sname = $_POST['name'];
-        $spass = $_POST['pass'];
+        $spass = sha1(($_POST['pass']));
         //将表单获取的电话和密码注册到表内
         $result=$conn->query("select*from newreg where tel='$sname'and password='$spass'");
         if($result->fetch_assoc()){
