@@ -1,4 +1,4 @@
-define(["jquery", "cookie"], function() {
+define(["jquery", "cookie", "lazyload"], function() {
     return {
         init: function() {
             /*-----------------------------------二级菜单--------------------------------------*/
@@ -98,7 +98,7 @@ define(["jquery", "cookie"], function() {
             <li target="_black" class="Shopping_show_content_product_li">
             <a href="javascript:;" class="Shopping_show_content_product">
                 <div class="Shopping_show_product_img_box">
-                    <img src="${value.url}" alt="">
+                    <img class="lazy" data-original="${value.url}">
                 </div>
                 <p class="Shopping_show_content_proName">${value.title}</p>
                 <p class="Shopping_show_content_price">￥${value.price}</p>
@@ -107,6 +107,10 @@ define(["jquery", "cookie"], function() {
             `
                 })
                 $indexbox.html($indexstr);
+                //懒加载
+                $(function() {
+                    $("img.lazy").lazyload({ effect: "fadeIn" });
+                });
             })
         }
     }

@@ -130,11 +130,27 @@ define(["jquery", "cookie"], function() {
             $(".shopping_box").on("click", function(e) {
                 //找到渲染出的删除按钮
                 if ($(e.target).is(".shopping_operation")) {
-                    $(e.target).parent(".shopping_boss").remove(); //该点击按钮的父级删除自身
                     //对应商品的sid
-                    let $shopsid = $(e.target).parent(".shopping_proCount").parent(".shopping_boss").attr("sid");
+                    let $shopsid = $(e.target).parent(".shopping_boss").attr("sid");
+                    //获取该单个商品的总价
+                    let $workpric = $(e.target).siblings(".shopping_priceCount").html();
+                    //所有商品总价
+                    let $pricesum = $(".shopping_bot_priceCount span").html().slice(1);
                     //获取该商品在数组内的索引位置
                     let $shopindex = $.inArray($shopsid, $sidarr);
+                    //该点击按钮的父级删除自身
+                    $(e.target).parent(".shopping_boss").remove();
+                    //获取删除的数量
+                    let $worknum = $numarr[$shopindex];
+                    //修改后的数量
+                    let $overnum = Number($shopnum) - Number($worknum);
+                    //改变商品数量总数
+                    $(".top_num").html($overnum);
+                    //改变商品数量总数
+                    $(".shopping_bot_preCount span").html($overnum);
+                    //修改后的所有商品总价
+                    let $allprice = $pricesum - $workpric;
+                    $(".shopping_bot_priceCount span").html("￥" + $allprice + ".00"); //改变商品总价
                     //两个数组在对应位置删除一个数字
                     $numarr.splice($shopindex, 1);
                     $sidarr.splice($shopindex, 1);
@@ -152,6 +168,11 @@ define(["jquery", "cookie"], function() {
             //全部商品清空
             $(".clear").on("click", function() {
                 $(".shopping_box").html(""); //购物车列表内容为空
+                $(".shopping_bot_priceCount span").html("￥" + "0.00"); //改变商品总价
+                //改变商品数量总数
+                $(".top_num").html("0");
+                //改变商品数量总数
+                $(".shopping_bot_preCount span").html("0");
                 $.cookie("cookienum", null, { //清空cookie里num
                     expires: -1,
                     path: "/"
