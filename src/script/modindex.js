@@ -88,7 +88,7 @@ define(["jquery", "cookie"], function() {
             /*------------------------------获取数据渲染--------------------------------*/
             let $indexbox = $(".Shopping_show_content_proList");
             $.ajax({
-                url: "http://localhost/js/project/php/1index.php",
+                url: "http://10.31.163.33/js/project/php/1index.php",
                 dataType: "json"
             }).done(function(data) {
                 let $indexstr = "";

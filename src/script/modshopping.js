@@ -10,7 +10,7 @@ define(["jquery", "cookie"], function() {
 
             function shopping(sid, num) {
                 $.ajax({
-                    url: "http://localhost/js/project/php/shopping.php",
+                    url: "http://10.31.163.33/js/project/php/shopping.php",
                     dataType: "json"
                 }).done(function(data) {
                     $.each(data, function(index, value) {

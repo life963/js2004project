@@ -4,7 +4,7 @@ define(["jquery", "cookie"], function() {
             /* -----------------------------渲染数据------------------------------------ */
             let $sid = location.search.substring(1).split('=')[1];
             $.ajax({
-                url: "http://localhost/js/project/php/detail.php",
+                url: "http://10.31.163.33/js/project/php/detail.php",
                 data: {
                     sid: $sid
                 },

@@ -9,7 +9,7 @@ define(["jquery", "cookie"], function() {
             $loginbtn.on("click", function() {
                 $.ajax({
                     type: "post",
-                    url: "http://localhost/js/project/php/login-register.php",
+                    url: "http://10.31.163.33/js/project/php/login-register.php",
                     dataType: "json",
                     data: {
                         name: $usernameBox.val(),
@@ -24,7 +24,7 @@ define(["jquery", "cookie"], function() {
                         $usernameBox.val(""); //清空账户名
                         $passwordBox.val(""); //清空密码
                         alert("登录成功");
-                        location.href = "http://localhost/js/project/src/1index.html";
+                        location.href = "http://10.31.163.33/js/project/src/1index.html";
                     } else if (data === 2) {
                         $login_top.css({
                             "color": "red",

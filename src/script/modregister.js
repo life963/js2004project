@@ -32,7 +32,7 @@ define(["jquery"], function() {
                     if ($reg.test($tel.val())) {
                         $.ajax({
                             type: "post",
-                            url: "http://localhost/js/project/php/login-register.php",
+                            url: "http://10.31.163.33/js/project/php/login-register.php",
                             dataType: "json",
                             data: {
                                 $phone: $tel.val()

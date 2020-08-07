@@ -46,7 +46,7 @@ define(["./jquery.pagination", "jquery", "lazyload"], function() {
             //渲染列表，不点击情况下默认渲染第一页
             let $listbox = $(".shoppinglist")
             $.ajax({
-                url: "http://localhost/js/project/php/list.php",
+                url: "http://10.31.163.33/js/project/php/list.php",
                 dataType: "json"
             }).done(function(data) {
                 let $liststr = "";
@@ -138,7 +138,7 @@ define(["./jquery.pagination", "jquery", "lazyload"], function() {
                 callback: function(api) {
                     console.log(api.getCurrent()); //获取当前页码
                     $.ajax({
-                        url: "http://localhost/js/project/php/list.php",
+                        url: "http://10.31.163.33/js/project/php/list.php",
                         dataType: "json",
                         data: {
                             page: api.getCurrent() //将页码传入后端，用于确定要获取哪组数据

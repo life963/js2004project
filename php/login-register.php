@@ -20,7 +20,7 @@
         //将表单获取的电话和密码注册到表内
         $result=$conn->query("INSERT newreg VALUES('$tel','$password')");
         //跳转到登陆页面
-        header("location:http://localhost/js/project/src/4login.html");
+        header("location:http://10.31.163.33/js/project/src/4login.html");
     }
 
     //登录
