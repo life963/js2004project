@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2020-08-05 15:52:31
+Date: 2020-08-07 09:04:10
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -21,7 +21,7 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `newreg`;
 CREATE TABLE `newreg` (
   `tel` varchar(20) NOT NULL,
-  `password` varchar(20) NOT NULL,
+  `password` varchar(40) NOT NULL,
   PRIMARY KEY (`tel`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -34,6 +34,10 @@ INSERT INTO `newreg` VALUES ('1', 'zx9630');
 INSERT INTO `newreg` VALUES ('', '');
 INSERT INTO `newreg` VALUES ('13367970261', 'zx9630');
 INSERT INTO `newreg` VALUES ('15970842210', 'zx9630');
+INSERT INTO `newreg` VALUES ('15970842222', 'e5064ab40bc16663c35be32b3315e7f0122a93b8');
+INSERT INTO `newreg` VALUES ('13333333333', 'e5064ab40bc16663c35be32b3315e7f0122a93b8');
+INSERT INTO `newreg` VALUES ('13366666666', 'e5064ab40bc16663c35be32b3315e7f0122a93b8');
+INSERT INTO `newreg` VALUES ('13399999999', 'e5064ab40bc16663c35be32b3315e7f0122a93b8');
 
 -- ----------------------------
 -- Table structure for `project`

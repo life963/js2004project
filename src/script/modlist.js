@@ -1,7 +1,7 @@
 define(["./jquery.pagination", "jquery", "lazyload"], function() {
     return {
         init: function() {
-            //下拉菜单
+            /*----------------------------------下拉菜单----------------------------------------*/
             let $topmenu = $(".top_menu_1");
             let $newbox = $(".newbox");
             $topmenu.on("mouseover", function() {
@@ -78,7 +78,7 @@ define(["./jquery.pagination", "jquery", "lazyload"], function() {
             })
 
 
-            //排序
+            /*--------------------------------排序--------------------------------------*/
             //默认排序，使用$defaultarr数组
             $(".sort-tab-def").on("click", function() {
                 $.each($defaultarr, function(index, value) { //每个value是a标签
@@ -129,7 +129,7 @@ define(["./jquery.pagination", "jquery", "lazyload"], function() {
             })
 
 
-            //分页，使用插件
+            /*----------------------------分页，使用插件-------------------------*/
             $(".jump").pagination({
                 pageCount: 2, //设置页码数
                 jump: true,

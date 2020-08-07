@@ -1,6 +1,7 @@
 define(["jquery"], function() {
     return {
         init: function() {
+            /*-------------------------------------------注册-------------------------------------------*/
             let $tel = $(".tel input"); //手机号码
             let $ran = $(".random input"); //随机验证码
             let $spannum = $(".random_cen") //生成验证码

@@ -1,6 +1,7 @@
-define(["jquery"], function() {
+define(["jquery", "cookie"], function() {
     return {
         init: function() {
+            /*-----------------------------------二级菜单--------------------------------------*/
             let $topmenu = $(".top_select li");
             let $tophover = $(".hoverbox .top_cenhover");
             let $boxs = $(".hoverbox");
@@ -35,7 +36,7 @@ define(["jquery"], function() {
                 });
             });
 
-            //轮播图
+            /*---------------------------------轮播图-----------------------------------*/
             let $imglist = $(".top_cenban_img img");
             let $libtn = $(".top_cenban ul li");
             let $left = $(".top_cenban_left");
@@ -83,7 +84,8 @@ define(["jquery"], function() {
                 $imglist.eq($index).stop(true).animate({ opacity: 1 }).siblings("img").stop(true).animate({ opacity: 0 });
             }
 
-            //获取数据渲染
+
+            /*------------------------------获取数据渲染--------------------------------*/
             let $indexbox = $(".Shopping_show_content_proList");
             $.ajax({
                 url: "http://localhost/js/project/php/1index.php",

@@ -13,11 +13,17 @@ require(["jquery"], function($) {
     if (mod) { //如果存在改属性值，进行调用对应模块
         require([mod], function(data) {
             data.init();
-        })
+        });
+        //列表页面需要index页面的js，list页面多引入index模块，其他的不需要
         if (mod == "modlist") {
             require(["modindex"], function(data) {
                 data.init();
             })
-        }
+        };
     }
+});
+
+//调用用户登录后，用户名显示模块
+require(["exuser"], function(data) {
+    data.init();
 })

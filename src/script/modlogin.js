@@ -1,6 +1,7 @@
-define(["jquery"], function() {
+define(["jquery", "cookie"], function() {
     return {
         init: function() {
+            /*---------------------------------------登录---------------------------------------------*/
             let $usernameBox = $("#username"); //用户名输入框
             let $passwordBox = $("#password"); //密码框
             let $loginbtn = $("#submit"); //登陆按钮
@@ -16,6 +17,10 @@ define(["jquery"], function() {
                     }
                 }).done(function(data) {
                     if (data === 1) {
+                        $.cookie("user", $usernameBox.val(), { //将用户名存入cookie
+                            expires: 7,
+                            path: "/"
+                        });
                         $usernameBox.val(""); //清空账户名
                         $passwordBox.val(""); //清空密码
                         alert("登录成功");

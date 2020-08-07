@@ -41,7 +41,7 @@ gulp.task('uglifyhtml', () => {
 gulp.task('uglifycss', () => {
     return gulp.src('src/css/*.css') //输入
         .pipe(css()) //压缩
-        .pipe(gulp.dest('dist/css')); //输出
+        .pipe(gulp.dest('dist/css/')); //输出
 });
 
 //5.编译sass
@@ -70,7 +70,7 @@ gulp.task('uglifyjs', () => {
 gulp.task('uglifyimg', () => {
     return gulp.src('src/images/*.{jpg,png,gif}')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/images/'))
 });
 
 

@@ -1,7 +1,7 @@
 define(["jquery", "cookie"], function() {
     return {
         init: function() {
-            //渲染数据
+            /* -----------------------------渲染数据------------------------------------ */
             let $sid = location.search.substring(1).split('=')[1];
             $.ajax({
                 url: "http://localhost/js/project/php/detail.php",
@@ -27,7 +27,7 @@ define(["jquery", "cookie"], function() {
             })
 
 
-            //点击图片效果
+            /*----------------------------------点击图片效果-------------------------------------*/
             let $exhlist = $(".exhibition_big p");
             let $exhbtn = $(".exhibition_small_top p");
             let $exhleft = $(".exhibition_small_bottom_left");
@@ -36,8 +36,9 @@ define(["jquery", "cookie"], function() {
             let $index = 0;
 
             let $listwidth = $exhlist.eq(0).width(); //获取每次移动的长度
+
             //如果小图不超过5，右键变灰色
-            console.log($exhbtn.length);
+            //console.log($exhbtn.length);
             if ($exhbtn.length < 5) {
                 $exhright.css("color", "#ddd")
             };
@@ -48,36 +49,47 @@ define(["jquery", "cookie"], function() {
             $exhbtn.on("click", function() {
                 $index = $(this).index();
                 tabswitch();
+                if ($index == 0) {
+                    $exhleft.css("color", "#ddd");
+                    $exhright.css("color", "#999")
+                } else if ($index == $exhbtn.length - 1) {
+                    $exhright.css("color", "#ddd");
+                    $exhleft.css("color", "#999");
+                } else {
+                    $exhright.css("color", "#999");
+                    $exhleft.css("color", "#999");
+                }
             });
             //点击向左
             $exhleft.on("click", function() {
                 $index--;
-                if ($index - 1 !== -1) {
-                    tabswitch();
-                    $exhleft.css("color", "#999")
-                } else if ($index - 1 == -1) {
+                if ($index == 0) { //到第一张
                     tabswitch();
                     $exhleft.css("color", "#ddd")
+                } else if ($index < 0) { //小于图片索引
+                    $index++; //将减去的index加回去
                 } else {
-                    $index++;
+                    tabswitch();
+                    $exhleft.css("color", "#999")
                 }
             });
             //点击向右
             $exhright.on("click", function() {
                 $index++;
                 $exhleft.css("color", "#999")
-                if ($index + 1 < $exhbtn.length) {
-                    tabswitch();
-                    $exhright.css("color", "#999")
-                } else if ($index + 1 == $exhbtn.length) {
+                if ($index == $exhbtn.length - 1) { //到最后一张
                     tabswitch();
                     $exhright.css("color", "#ddd")
+                } else if ($index >= $exhbtn.length) { //超过图片索引
+                    $index--; //将加的减回去
                 } else {
-                    $index--;
+                    tabswitch();
+                    $exhright.css("color", "#999")
                 }
 
             });
 
+            //切换效果封装
             function tabswitch() {
                 //小图边框效果
                 $exhbtn.eq($index).addClass("exhibition_small_active").siblings("p").removeClass("exhibition_small_active");
@@ -88,7 +100,7 @@ define(["jquery", "cookie"], function() {
             }
 
 
-            //放大镜效果
+            /*-----------------------------------放大镜效果------------------------------------------*/
             let $movebox = $(".exhbox"); //小图
             let $smallf = $(".smallf"); //小放大镜
             let $bigf = $(".bigf"); //大放大镜
@@ -128,7 +140,7 @@ define(["jquery", "cookie"], function() {
             })
 
 
-            //购物数量
+            /*-------------------------------------------购物数量-----------------------------------------*/
             let $increace = $(".math_increace"); //加号
             let $math_num = $(".math_num"); //当前数量
             let $reduce = $(".math_reduce"); //减号
